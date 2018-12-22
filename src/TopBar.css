@@ -1,0 +1,18 @@
+.header {    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 3.6rem;
+    width: 12.1rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
