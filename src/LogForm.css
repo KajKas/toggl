@@ -1,0 +1,17 @@
+.form-container {
+  background: #ffffff;
+}
+
+.form {
+  padding: 5rem;
+}
+
+.form label {
+  display: block;
+}
+
+.form input {
+  width: 100%;
+  background: #e3e8eb;
+  border: none;
+}

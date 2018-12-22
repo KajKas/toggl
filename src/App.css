@@ -1,5 +1,24 @@
+body {
+  background: #e3e8eb;
+}
+
 .main {
   padding-top: 10rem;
   display: flex;
   justify-content: space-around;
+  background: linear-gradient(0deg, #e3e8eb 20%, #88CF8F 0%);
+}
+
+.hero {
+  width: 40%;
+}
+
+.heading {
+  text-align: center;
+  color: #ffffff;
+}
+
+.subheading {
+  text-align: center;
+  color: #ffffff;
 }

@@ -9,9 +9,9 @@ class LogIn extends Component {
   render() {
     return (
         <main className="main">
-          <div className="form-container">
-            <h1>Get tracking</h1>
-            <h4>Log in to your Toggl account.</h4>
+          <div className="hero">
+            <h1 className="heading">Get tracking</h1>
+            <h4 className="subheading">Log in to your Toggl account.</h4>
             <LogForm button1={"Log in"} button2={"Log in with Google"}/>
           </div>
         </main>

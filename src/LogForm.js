@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './LogForm.css'
 
 class LogForm extends Component {
   state = {
@@ -6,8 +7,8 @@ class LogForm extends Component {
 
   render() {
     return (
-        <div>            
-            <form>
+        <div className="form-container">            
+            <form className="form">
                 <div>
                     <label>
                         Email address
