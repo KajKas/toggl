@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import SignUp from './SignUp'
 import LogIn from './LogIn'
 import './TopBar.css'
@@ -39,6 +39,7 @@ class TopBar extends Component {
                         </li>
                     </ul>                    
                 </header>
+                <Redirect from="/" to="login" />
                 <Route path="/login" component={LogIn}/>
                 <Route path="/signup" component={SignUp}/>
             </div>

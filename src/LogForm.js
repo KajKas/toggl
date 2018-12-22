@@ -20,17 +20,17 @@ class LogForm extends Component {
                     <label>
                         Password
                     </label>
-                    <input/>
+                    <input type="password"/>
                 </div>
 
                 <a href="#">Forgot password?</a>
                 
-                <div>
-                    <button>{this.props.button1}</button>
-
-                    <h4>Or</h4>
-
-                    <button>{this.props.button2}</button>
+                <div className="buttons-container">
+                    <button className="log-button log-button_normal">{this.props.button1}</button>
+                    <div className="divider">
+                        <span>Or</span>
+                    </div>
+                    <button className="log-button log-button_google">{this.props.button2}</button>
                 </div>
             </form>
         </div>
