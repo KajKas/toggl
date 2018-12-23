@@ -9,22 +9,20 @@ class LogForm extends Component {
     return (
         <div className="form-container">            
             <form className="form">
-                <div>
+            
+                <div className="form-field">
                     <label>
                         Email address
                     </label>
-                    <input/>
+                    <input type="email"/>
                 </div>
-
-                <div>
+                <div className="form-field">
                     <label>
                         Password
                     </label>
                     <input type="password"/>
                 </div>
-
-                <a href="#">Forgot password?</a>
-                
+                <a href="#">Forgot password?</a>                
                 <div className="buttons-container">
                     <button className="log-button log-button_normal">{this.props.button1}</button>
                     <div className="divider">

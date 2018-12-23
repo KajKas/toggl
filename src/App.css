@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
+html {
+  font-size: 16px;
+}
+
 body {
   background: #e3e8eb;
   font-family: 'Lato',Arial,sans-serif;
 }
 
 .main {
-  padding-top: 6rem;
+  padding-top: 6rem;  
+  background: linear-gradient(0deg, #e3e8eb 36%, #88CF8F 0%);
+}
+
+.signup-main .form-container {
+  margin-bottom: 18rem;
+}
+
+.hero-wrapper {
   display: flex;
   justify-content: space-around;
-  background: linear-gradient(0deg, #e3e8eb 20%, #88CF8F 0%);
 }
 
 .hero {
@@ -29,4 +40,30 @@ body {
   color: #ffffff;
   margin: 0;
   padding-bottom: 3rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cta {
+  margin: 5rem;
+}
+
+.cta h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.cta-button {
+  width: 14rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #ffffff;
+  border: #ffffff;
 }
