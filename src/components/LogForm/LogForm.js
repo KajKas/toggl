@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './LogForm.css'
-import TaskManager from './TaskManager';
+import TaskManager from '../TaskManager/TaskManager';
 
 class LogForm extends Component {
   state = {

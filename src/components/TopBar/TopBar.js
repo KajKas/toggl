@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
-import SignUp from './SignUp'
-import LogIn from './LogIn'
-import TaskManager from './TaskManager'
+import SignUp from '../SignUp/SignUp'
+import LogIn from '../LogIn/LogIn'
+import TaskManager from '../TaskManager/TaskManager'
 import './TopBar.css'
 
 class TopBar extends Component {

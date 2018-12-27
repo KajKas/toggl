@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './TaskManager.css';
-import Timer from './Timer';
-import Dashboard from './Dashboard';
-import Reports from './Reports';
-import Insights from './Insights';
-import SavedReports from './SavedReports';
-import Projects from './Projects';
-import Clients from './Clients';
-import Team from './Team';
-import Workspaces from './Workspaces';
-import Tags from './Tags';
-import Help from './Help';
+import Timer from '../Timer/Timer';
+import Dashboard from '../Dashboard/Dashboard';
+import Reports from '../Reports/Reports';
+import Insights from '../Insights/Insights';
+import SavedReports from '../SavedReports/SavedReports';
+import Projects from '../Projects/Projects';
+import Clients from '../Clients/Clients';
+import Team from '../Team/Team';
+import Workspaces from '../Workspaces/Workspaces';
+import Tags from '../Tags/Tags';
+import Help from '../Help/Help';
 
 
 class TaskManager extends Component {

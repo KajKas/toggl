@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import LogForm from './LogForm';
-import './App.css'
+import LogForm from '../LogForm/LogForm';
+import '../App/App.css'
 
 class SignUp extends Component {
   state = {
