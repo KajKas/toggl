@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import SignUp from './SignUp'
 import LogIn from './LogIn'
+import TaskManager from './TaskManager'
 import './TopBar.css'
 
 class TopBar extends Component {
@@ -37,11 +38,15 @@ class TopBar extends Component {
                         <li>
                             <Link to="/signup">Sign up</Link>
                         </li>
+                        <li>
+                            <Link to="/taskmanager">Task Manager</Link>
+                        </li>
                     </ul>                    
                 </header>
                 <Redirect from="/" to="login" />
                 <Route path="/login" component={LogIn}/>
                 <Route path="/signup" component={SignUp}/>
+                <Route path="/taskmanager" component={TaskManager}/>
             </div>
         </Router>
     )
