@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './LogForm.css'
-import TaskManager from '../TaskManager/TaskManager';
 
 class LogForm extends Component {
   state = {
@@ -23,7 +22,7 @@ class LogForm extends Component {
                     </label>
                     <input type="password"/>
                 </div>
-                <a href="/TaskManager">Forgot password?</a>                
+                <a href="null">Forgot password?</a>                
                 <div className="buttons-container">
                     <button className="log-button log-button_normal">{this.props.button1}</button>
                     <div className="divider">
