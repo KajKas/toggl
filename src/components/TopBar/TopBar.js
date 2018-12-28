@@ -38,14 +38,9 @@ class TopBar extends Component {
                         <li>
                             <Link to="/signup">Sign up</Link>
                         </li>
-                        <li>
-                            <Link to="/taskmanager">Task Manager</Link>
-                        </li>
                     </ul>                    
                 </header>
-                <Route path="/login" component={LogIn}/>
                 <Route path="/signup" component={SignUp}/>
-                <Route path="/taskmanager" component={TaskManager}/>
             </div>
         </Router>
     )

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Redirect, Link } from 'react-router-dom';
 import './LogForm.css'
 
 class LogForm extends Component {
@@ -24,11 +25,11 @@ class LogForm extends Component {
                 </div>
                 <a href="null">Forgot password?</a>                
                 <div className="buttons-container">
-                    <button className="log-button log-button_normal">{this.props.button1}</button>
+                    <Link to="/taskmanager" className="log-button log-button_normal">{this.props.button1}</Link>
                     <div className="divider">
                         <span>Or</span>
                     </div>
-                    <button className="log-button log-button_google">{this.props.button2}</button>
+                    <Link to="/taskmanager" className="log-button log-button_google">{this.props.button2}</Link>
                 </div>
             </form>
         </div>

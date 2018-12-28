@@ -8,12 +8,13 @@ class LogIn extends Component {
   render() {
     return (
       <Fragment>
+        <TopBar/>
         <main className="main">
           <div className="hero-wrapper">
             <div className="hero">
               <h1 className="heading">Get tracking</h1>
               <h4 className="subheading">Log in to your Toggl account.</h4>
-              <LogForm button1={"Log in >"} button2={"Log in with Google >"}/>
+              <LogForm button1={"Log in >"} button2={"Log in with Google >"}/>              
             </div>
           </div>
           <footer className="footer">
