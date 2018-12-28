@@ -6,3 +6,19 @@
   width: 11rem;
   background-color: #323232;
 }
+
+.task-mamager_menu {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.task-mamager_menu a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  height: 32px;
+}
+
+.task-manager_main {
+  margin-left: 200px;
+}
