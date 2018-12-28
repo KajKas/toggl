@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
-import TopBar from '../TopBar/TopBar';
+import Auth from '../Auth/Auth';
 
 class App extends Component {
   render() {
     return (
       <Fragment>
-        <TopBar/>
+        <Auth/>
         
       </Fragment>
     );

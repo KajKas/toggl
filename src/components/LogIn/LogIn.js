@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import LogForm from '../LogForm/LogForm';
-import '../App/App.css'
+import '../App/App.css';
+import TopBar from '../TopBar/TopBar';
 
 class LogIn extends Component {
-  state = {
-  }
 
   render() {
     return (
+      <Fragment>
         <main className="main">
           <div className="hero-wrapper">
             <div className="hero">
@@ -23,6 +23,7 @@ class LogIn extends Component {
             </div>
           </footer>
         </main>
+      </Fragment>
     )
   }
 }

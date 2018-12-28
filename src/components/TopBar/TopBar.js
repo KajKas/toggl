@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import SignUp from '../SignUp/SignUp'
 import LogIn from '../LogIn/LogIn'
 import TaskManager from '../TaskManager/TaskManager'
@@ -31,7 +31,7 @@ class TopBar extends Component {
                         <path d="M38 14.1h-5v25h5zm-2.5 40A17.5 17.5 0 0 1 31 19.7v5.2a12.5 12.5 0 1 0 9 0v-5.2a17.5 17.5 0 0 1-4.5 34.4z" fill="#fff">
                         </path>
                     </svg>
-                    <ul className="menu">            
+                    <ul className="menu">
                         <li>
                             <Link to="/login">Log in</Link>
                         </li>
@@ -43,7 +43,6 @@ class TopBar extends Component {
                         </li>
                     </ul>                    
                 </header>
-                <Redirect from="/" to="login" />
                 <Route path="/login" component={LogIn}/>
                 <Route path="/signup" component={SignUp}/>
                 <Route path="/taskmanager" component={TaskManager}/>
