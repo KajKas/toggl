@@ -21,7 +21,7 @@ class TaskManager extends Component {
   render() {
     return (
       <Router>
-            <div>
+            <div className="side-bar">
                 <header className="task-mamager_header">
                     <ul className="task-mamager_menu">            
                         <li>

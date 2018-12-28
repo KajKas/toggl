@@ -1,2 +1,8 @@
-.task-mamager_header {
+.side-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 11rem;
+  background-color: #323232;
 }
