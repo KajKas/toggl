@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Timer.css';
 
 class Timer extends Component {
   state = {
@@ -6,31 +7,36 @@ class Timer extends Component {
       {
         id: '1',
         title: 'Be awesome',
-        isDone: true,
-        isImportant: false,
+        isDone: true
       },
       {
         id: '2',
         title: 'Learn React',
-        isDone: false,
-        isImportant: true
+        isDone: false
       }
     ]
   }
 
   render() {
     return (
-      <ul className="App-list">
-      {
-        this.state.tasks.map(
-          task => (
-            <li>
-              {task.title}
-            </li>
+      <div>
+        <div>
+          <form>
+            <input className="add-task_input" placeholder="What are you working on?"/>
+          </form>
+        </div>
+        <ul className="App-list">
+        {
+          this.state.tasks.map(
+            task => (
+              <li>
+                {task.title}
+              </li>
+            )
           )
-        )
-      }
-    </ul>
+        }
+        </ul>
+      </div>
     )
   }
 }

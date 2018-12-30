@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import './TaskManager.css';
 import Timer from '../Timer/Timer';
 import Dashboard from '../Dashboard/Dashboard';
@@ -12,6 +12,7 @@ import Team from '../Team/Team';
 import Workspaces from '../Workspaces/Workspaces';
 import Tags from '../Tags/Tags';
 import Help from '../Help/Help';
+import logo from '../../img/logo.svg'
 
 
 class TaskManager extends Component {
@@ -22,9 +23,13 @@ class TaskManager extends Component {
     return (
       <Router>
             <Fragment>
+            <Redirect from="/" to="timer" />
                 <div className="side-bar">
                     <header className="task-mamager_header">
                         <ul className="task-mamager_menu">            
+                            <li>
+                                <Link to="/timer"><img className="task-manager_logo" src={logo} alt={logo}/></Link>
+                            </li>
                             <li>
                                 <Link to="/timer">Timer</Link>
                             </li>
