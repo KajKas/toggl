@@ -22,7 +22,7 @@ class Timer extends Component {
       <div>
         <div>
           <form>
-            <input className="add-task_input" placeholder="What are you working on?"/>
+            <input className="add-task_input" placeholder="What are you working on?" onfocus="placeholder=''"/>
           </form>
         </div>
         <ul className="App-list">

@@ -20,6 +20,10 @@
   height: 32px;
 }
 
+.task-mamager_menu img {
+  height: 18px;
+}
+
 .task-manager_main {
   margin-left: 175px;
   height: 100vh;

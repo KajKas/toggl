@@ -13,6 +13,17 @@ import Workspaces from '../Workspaces/Workspaces';
 import Tags from '../Tags/Tags';
 import Help from '../Help/Help';
 import logo from '../../img/logo.svg'
+import clock from '../../img/clock.svg'
+import chart from '../../img/chart.svg'
+import report from '../../img/report.svg'
+import diagram from '../../img/diagram.svg'
+import star from '../../img/star.svg'
+import folder from '../../img/folder.svg'
+import person from '../../img/person.svg'
+import people from '../../img/people.svg'
+import suitcase from '../../img/suitcase.svg'
+import tag from '../../img/tag.svg'
+import question from '../../img/question.svg'
 
 
 class TaskManager extends Component {
@@ -31,37 +42,37 @@ class TaskManager extends Component {
                                 <Link to="/timer"><img className="task-manager_logo" src={logo} alt={logo}/></Link>
                             </li>
                             <li>
-                                <Link to="/timer">Timer</Link>
+                                <Link to="/timer"><img className="task-manager_menu_clock" src={clock} alt={clock}/>Timer</Link>
                             </li>
                             <li>
-                                <Link to="/dashboard">Dashboard</Link>
+                                <Link to="/dashboard"><img className="task-manager_menu_chart" src={chart} alt={chart}/>Dashboard</Link>
                             </li>
                             <li>
-                                <Link to="/reports">Reports</Link>
+                                <Link to="/reports"><img className="task-manager_menu_report" src={report} alt={report}/>Reports</Link>
                             </li>
                             <li>
-                                <Link to="/insights">Insights</Link>
+                                <Link to="/insights"><img className="task-manager_menu_diagram" src={diagram} alt={diagram}/>Insights</Link>
                             </li>
                             <li>
-                                <Link to="/savedreports">Saved Reports</Link>
+                                <Link to="/savedreports"><img className="task-manager_menu_star" src={star} alt={star}/>Saved Reports</Link>
                             </li>
                             <li>
-                                <Link to="/projects">Projects</Link>
+                                <Link to="/projects"><img className="task-manager_menu_folder" src={folder} alt={folder}/>Projects</Link>
                             </li>
                             <li>
-                                <Link to="/clients">Clients</Link>
+                                <Link to="/clients"><img className="task-manager_menu_person" src={person} alt={person}/>Clients</Link>
                             </li>
                             <li>
-                                <Link to="/team">Team</Link>
+                                <Link to="/team"><img className="task-manager_menu_people" src={people} alt={people}/>Team</Link>
                             </li>
                             <li>
-                                <Link to="/workspaces">Workspaces</Link>
+                                <Link to="/workspaces"><img className="task-manager_menu_suitcase" src={suitcase} alt={suitcase}/>Workspaces</Link>
                             </li>
                             <li>
-                                <Link to="/tags">Tags</Link>
+                                <Link to="/tags"><img className="task-manager_menu_tag" src={tag} alt={tag}/>Tags</Link>
                             </li>
                             <li>
-                                <Link to="/help">Help</Link>
+                                <Link to="/help"><img className="task-manager_menu_question" src={question} alt={question}/>Help</Link>
                             </li>
                         </ul>                    
                     </header>                
