@@ -36,43 +36,55 @@ class TaskManager extends Component {
             <Fragment>
             <Redirect from="/" to="timer" />
                 <div className="side-bar">
-                    <header className="task-mamager_header">
-                        <ul className="task-mamager_menu">            
+                    <header className="task-manager_header">
+                        <ul className="task-manager_menu">            
                             <li>
-                                <Link to="/timer"><img className="task-manager_logo" src={logo} alt={logo}/></Link>
+                                <Link to="/timer" className="task-manager_logo">
+                                    <img src={logo} alt={logo}/>
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/timer"><img className="task-manager_menu_clock" src={clock} alt={clock}/>Timer</Link>
+                                <Link to="/timer">
+                                    <div className="task-manager_menu_img">
+                                        <img className="task-manager_menu_clock" src={clock} alt={clock}/>
+                                    </div>
+                                    Timer
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/dashboard"><img className="task-manager_menu_chart" src={chart} alt={chart}/>Dashboard</Link>
+                                <Link to="/dashboard">
+                                    <div className="task-manager_menu_img">
+                                        <img className="task-manager_menu_chart" src={chart} alt={chart}/>
+                                    </div>
+                                    Dashboard
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/reports"><img className="task-manager_menu_report" src={report} alt={report}/>Reports</Link>
+                                <Link to="/reports"><div className="task-manager_menu_img"><img className="task-manager_menu_report" src={report} alt={report}/></div>Reports</Link>
                             </li>
                             <li>
-                                <Link to="/insights"><img className="task-manager_menu_diagram" src={diagram} alt={diagram}/>Insights</Link>
+                                <Link to="/insights"><div className="task-manager_menu_img"><img className="task-manager_menu_diagram" src={diagram} alt={diagram}/></div>Insights</Link>
                             </li>
                             <li>
-                                <Link to="/savedreports"><img className="task-manager_menu_star" src={star} alt={star}/>Saved Reports</Link>
+                                <Link to="/savedreports"><div className="task-manager_menu_img"><img className="task-manager_menu_star" src={star} alt={star}/></div>Saved Reports</Link>
                             </li>
                             <li>
-                                <Link to="/projects"><img className="task-manager_menu_folder" src={folder} alt={folder}/>Projects</Link>
+                                <Link to="/projects"><div className="task-manager_menu_img"><img className="task-manager_menu_folder" src={folder} alt={folder}/></div>Projects</Link>
                             </li>
                             <li>
-                                <Link to="/clients"><img className="task-manager_menu_person" src={person} alt={person}/>Clients</Link>
+                                <Link to="/clients"><div className="task-manager_menu_img"><img className="task-manager_menu_person" src={person} alt={person}/></div>Clients</Link>
                             </li>
                             <li>
-                                <Link to="/team"><img className="task-manager_menu_people" src={people} alt={people}/>Team</Link>
+                                <Link to="/team"><div className="task-manager_menu_img"><img className="task-manager_menu_people" src={people} alt={people}/></div>Team</Link>
                             </li>
                             <li>
-                                <Link to="/workspaces"><img className="task-manager_menu_suitcase" src={suitcase} alt={suitcase}/>Workspaces</Link>
+                                <Link to="/workspaces"><div className="task-manager_menu_img"><img className="task-manager_menu_suitcase" src={suitcase} alt={suitcase}/></div>Workspaces</Link>
                             </li>
                             <li>
-                                <Link to="/tags"><img className="task-manager_menu_tag" src={tag} alt={tag}/>Tags</Link>
+                                <Link to="/tags"><div className="task-manager_menu_img"><img className="task-manager_menu_tag" src={tag} alt={tag}/></div>Tags</Link>
                             </li>
                             <li>
-                                <Link to="/help"><img className="task-manager_menu_question" src={question} alt={question}/>Help</Link>
+                                <Link to="/help"><div className="task-manager_menu_img"><img className="task-manager_menu_question" src={question} alt={question}/></div>Help</Link>
                             </li>
                         </ul>                    
                     </header>                

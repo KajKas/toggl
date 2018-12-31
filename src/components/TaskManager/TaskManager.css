@@ -7,21 +7,17 @@
   background-color: #323232;
 }
 
-.task-mamager_menu {
+.task-manager_menu {
   list-style: none;
   padding-left: 10px;
   margin-top: 20px;
 }
 
-.task-mamager_menu a {
+.task-manager_menu a {
   display: block;
   text-decoration: none;
   color: #ffffff;
   height: 32px;
-}
-
-.task-mamager_menu img {
-  height: 18px;
 }
 
 .task-manager_main {
@@ -32,9 +28,28 @@
 }
 
 .task-manager_logo {
+  margin-bottom: 20px;
+}
+
+.task-manager_logo img {
   height: 1.5rem;
 }
 
 .task-manager_main ul, .task-manager_main h1 {
   margin: 0;
+}
+
+/*.task-manager_menu_clock {
+  background-color: aqua;
+  background-image: url(../../img/clock.svg)
+}*/
+
+.task-manager_menu_img {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+
+.task-manager_menu_img img {
+  height: 15px;
 }
