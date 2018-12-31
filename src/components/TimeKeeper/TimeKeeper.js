@@ -3,7 +3,8 @@ import React, { Component, Fragment } from 'react';
 class TimeKeeper extends Component {
 
   state = {
-    time: 0
+    time: 0,
+    pause: false
   }
 
   componentDidMount() {
@@ -17,7 +18,14 @@ class TimeKeeper extends Component {
   }
 
   pauseTimeKeeper() {
-    clearInterval(this.intervalId)
+    this.state.pause 
+    ? this.intervalId = setInterval(() => this.setState({
+        time: this.state.time + 1
+      }), 1000) 
+    : clearInterval(this.intervalId)   
+    this.setState({
+      pause: !this.state.pause
+    })
   }
 
   render() {
@@ -25,9 +33,9 @@ class TimeKeeper extends Component {
       <Fragment>
         <span>Timer: {this.state.time}</span>
         <button
-              onClick={() => this.pauseTimeKeeper(this.props.id)}
-            >
-              pause
+          onClick={() => this.pauseTimeKeeper(this.props.id)}
+        >
+          pause
         </button>
       </Fragment>
     )
