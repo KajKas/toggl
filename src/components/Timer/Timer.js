@@ -8,13 +8,11 @@ class Timer extends Component {
     tasks: [
       {
         id: '1',
-        title: 'Be awesome',
-        isDone: true
+        title: 'Be awesome'
       },
       {
         id: '2',
-        title: 'Learn React',
-        isDone: false
+        title: 'Learn React'
       }
     ]
   }
@@ -23,9 +21,7 @@ class Timer extends Component {
     this.setState({
       tasks: this.state.tasks.concat({
         id: Date.now().toString(32),
-        title: taskTitle,
-        isDone: false,
-        isImportant: false
+        title: taskTitle
       })
     })
   }
@@ -57,8 +53,9 @@ class Timer extends Component {
               type="text"
               value={this.state.taskFormValue}
               onChange={(event) => this.setState({
-              taskFormValue: event.target.value
-          })}/>
+                taskFormValue: event.target.value
+              })}
+            />
           </form>
         </div>
         <ul className="timer-list">
@@ -66,10 +63,10 @@ class Timer extends Component {
             this.state.tasks.map(
               task => (
                 <TimerListItem
-                id={task.id}
-                title={task.title}
-                deleteTask={this.deleteTask}
-                pauseTimeKeeper={this.pauseTimeKeeper}
+                  id={task.id}
+                  title={task.title}
+                  deleteTask={this.deleteTask}
+                  pauseTimeKeeper={this.pauseTimeKeeper}
                 />
               )
             )
