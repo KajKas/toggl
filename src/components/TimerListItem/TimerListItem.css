@@ -1,0 +1,7 @@
+.timer-list-item {
+  padding: 15px 70px 15px 20px;
+}
+
+.timer-list-item_controls {
+  float: right;
+}

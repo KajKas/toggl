@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+.timer-list {
+  list-style: none;
+  padding: 0;
+}
+
 .add-task_input:focus::-webkit-input-placeholder {
   color: transparent;
 }

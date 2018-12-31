@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 class TimeKeeper extends Component {
 
@@ -16,9 +16,20 @@ class TimeKeeper extends Component {
     clearInterval(this.intervalId)
   }
 
+  pauseTimeKeeper() {
+    clearInterval(this.intervalId)
+  }
+
   render() {
     return (
-      <h3>Timer: {this.state.time}</h3>
+      <Fragment>
+        <span>Timer: {this.state.time}</span>
+        <button
+              onClick={() => this.pauseTimeKeeper(this.props.id)}
+            >
+              pause
+        </button>
+      </Fragment>
     )
   }
 }

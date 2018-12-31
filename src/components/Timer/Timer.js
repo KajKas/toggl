@@ -61,7 +61,7 @@ class Timer extends Component {
           })}/>
           </form>
         </div>
-        <ul className="App-list">
+        <ul className="timer-list">
           {
             this.state.tasks.map(
               task => (
@@ -69,6 +69,7 @@ class Timer extends Component {
                 id={task.id}
                 title={task.title}
                 deleteTask={this.deleteTask}
+                pauseTimeKeeper={this.pauseTimeKeeper}
                 />
               )
             )
