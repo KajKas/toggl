@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect, Link } from 'react-router-dom';
+import { BrowserRouter as Redirect, Link } from 'react-router-dom';
 import './LogForm.css'
 
 class LogForm extends Component {

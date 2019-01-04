@@ -1,5 +1,7 @@
 .timer-list-item {
   padding: 15px 70px 15px 20px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
 }
 
 .timer-list-item_controls {

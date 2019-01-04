@@ -4,13 +4,7 @@ class TimeKeeper extends Component {
 
   state = {
     time: 0,
-    pause: false
-  }
-
-  componentDidMount() {
-    this.intervalId = setInterval(() => this.setState({
-      time: this.state.time + 1
-    }), 1000)
+    pause: true
   }
 
   componentWillUnmount() {

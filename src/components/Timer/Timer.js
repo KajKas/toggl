@@ -63,6 +63,7 @@ class Timer extends Component {
             this.state.tasks.map(
               task => (
                 <TimerListItem
+                  key={task.id}
                   id={task.id}
                   title={task.title}
                   deleteTask={this.deleteTask}
